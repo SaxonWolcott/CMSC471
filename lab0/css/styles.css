@@ -13,6 +13,7 @@ h1 {
     color: #2c3e50;  
 }
 
+/* NEW Hover over p to change font */
 p:hover {
     font-weight: bold;  /* Change font weight on hover */
 }
