@@ -4,6 +4,7 @@ console.log('Script loaded successfully!');
 
 // Select HTML element
 const heading = document.querySelector('h1');
+const introText = document.getElementById('intro-text');
 /* Why: Gets reference to h1 tag */
 
 // Add interactive behavior
@@ -12,7 +13,9 @@ heading.style.cursor = 'pointer';
 
 // Event listener
 heading.addEventListener('click', function() {
-    this.style.color = getRandomColor();
+    color = getRandomColor();
+    this.style.color = color;
+    introText.style.color = color;
 });
 /* Why: Makes heading change color when clicked */
 
